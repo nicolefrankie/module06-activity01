@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Greetings, {{name | uppercase}}!</h1>
+            <label>What is your name? </label>
+            <input type="text" ng-model="name">
+            <hr>
+        </div>
+        <div>
+            <h2>PHP to USD</h2>
+            <label>Enter Philippine Peso: </label>
+            <input type="number" ng-model="val1">
+            <p>The conversion of PHP to USD is: {{val1 * 57.38 | currency}}</p>
+        </div>
+    </body>
+</html>
